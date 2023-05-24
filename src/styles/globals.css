@@ -325,41 +325,39 @@ ul {
 .parallax-container {
   position: relative;
   overflow: hidden;
-  height: 50vh; 
+  height: 100vh; 
 }
 
 .parallax-home-first-section {
-  background-image: url("/background-template.jpg");
+  background-image: url("../assets/images/background-template.jpg");
   filter: brightness(70%);
   opacity: 0.9;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
   /* filter: contrast(120%); */
   /* filter: invert(30%); */
   /* filter: saturate(261%); */
 }
 .parallax-beer-background {
-  background-image: url("/beer-background.jpg");
+  background-image: url("../assets/images/beer-background.jpg");
   filter: brightness(70%);
   opacity: 0.9;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
   /* filter: contrast(120%); */
   /* filter: invert(30%); */
   /* filter: saturate(261%); */
 }
 
-.parallax-box-image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-  /* Adicione aqui a imagem de fundo desejada */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.parallax-content {
-  /* Estilize o conteúdo conforme necessário */
-  padding: 20px;
-}
 
 /************************* PARALLAX ***************************/

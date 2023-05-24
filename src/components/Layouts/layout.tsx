@@ -23,7 +23,7 @@ const Layout: React.FC<{
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="flex flex-col justify-between mt-20">
+      <div className="flex flex-col justify-between">
         <Header />
 
         {children}
