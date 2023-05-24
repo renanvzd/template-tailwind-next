@@ -1,4 +1,10 @@
-export const COMPANY = 'Template';
+export const COMPANY = 'Template Company';
+export const ADDRESS = '99, Main Avenue, Blackpool';
+export const CITY = 'Co. Cork T23AW72';
+export const PHONE = '083 099 9999';
+export const EMAIL = 'template@template.com.br';
+
+
 export const FACEBOOK = 'https://www.facebook.com';
 export const YOUTUBE = 'https://www.youtube.com';
 export const INSTAGRAM = 'https://www.instagram.com';

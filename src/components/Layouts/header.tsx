@@ -71,9 +71,9 @@ export function Header() {
               </ul>
               <div className='flex w-full mx-auto justify-center lg:ml-12 mt-10 lg:mt-0'>
                 <Link href="/">
-                  <div className="flex items-baseline w-auto sm:w-28 justify-center bg-green-200 rounded-md ml-0">
+                  <div className="flex items-baseline w-auto sm:w-28 justify-center bg-transparent rounded-md ml-0">
                     <div className="flex items-baseline justify-center flex-grow lg:px-2 py-2">
-                      <button className="p-2 lg:p-0 lg:py-1 text-2xl lg:text-xl items-baseline place-items-start font-bold text-black-400">Lisbon</button>
+                      {/* <button className="p-2 lg:p-0 lg:py-1 text-2xl lg:text-xl items-baseline place-items-start font-bold text-black-400">Lisbon</button> */}
                     </div>
                   </div>
                 </Link>
