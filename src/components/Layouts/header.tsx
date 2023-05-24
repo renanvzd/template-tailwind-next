@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 // import Logo from "@/assets/images/fourleaf.svg";
@@ -8,15 +8,31 @@ import { COMPANY } from '@/constants/general';
 
 export function Header() {
   const [classOn, setClassOn] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
   const menusHeader = MenuHeader;
 
   const router = useRouter();
   const currentPath = useMemo(() => router?.pathname, [router]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      setIsScrolled(scrollTop > 400);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <header className="fixed top-0 left-0 z-40 w-full">
-        <div className="flex items-center justify-between lg:h-32 h-20 mx-auto max-w-full md:px-3 lg:px-16 xl:px-8">
+        <div className={`flex items-center justify-between lg:h-32 h-20 mx-auto max-w-full md:px-3 xl:px-8 ${isScrolled ? 'bg-black lg:h-20' : ''
+          } transition-bg-color-header`}>
           <div className="flex items-center w-auto justify-center mr-5">
             {/* <Image className="w-10 h-10 mr-2" src={Logo} alt="Four Leaf" width={20} height={20} /> */}
             <div className="flex items-center justify-center flex-grow">

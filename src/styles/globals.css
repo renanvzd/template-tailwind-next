@@ -78,6 +78,9 @@ ul {
 }
 
 /************************** Menu ************************* */
+.transition-bg-color-header {
+  transition: background-color 0.5s ease, height 0.5s ease;
+}
 
 .active-menu-header span {
   color: #fff;
@@ -104,7 +107,7 @@ ul {
   border-radius: 3px 3px 0 0;
   width: 80px;
   position: absolute;
-  bottom: 35px;
+  bottom: 28%;
   background: #fff;
 }
 
@@ -194,6 +197,11 @@ ul {
     margin-right: 30px;
   }
 
+  .menuSection {
+            transition: .3s;
+
+  }
+
   /*Fullscreen*/
   .menuSectionOn {
     position: absolute;
@@ -202,6 +210,8 @@ ul {
     width: 100vw;
     height: 100vh;
     background: var(--gray-900);
+    transition: .5s;
+
     opacity: 0.95;
     z-index: 10;
     display: flex;
