@@ -1,6 +1,6 @@
 import { Layout } from "@/components/Layouts/layout";
+import { FirstSectionParallaxHomePage } from "@/components/Homepage/first-section-parallax";
 import { HeaderHomepage } from "@/components/Homepage/header";
-import { FirstSectionHomePage } from "@/components/Homepage/first-section";
 
 const LandingPage = () => {
   return (
@@ -10,8 +10,8 @@ const LandingPage = () => {
         description=""
         content=""
       >
+        <FirstSectionParallaxHomePage />
         <HeaderHomepage />
-        <FirstSectionHomePage />
       </Layout>
     </>
   );

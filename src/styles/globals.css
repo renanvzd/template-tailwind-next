@@ -40,6 +40,7 @@ select,
 button {
   font: 400 1rem "Roboto", sans-serif;
   outline: none;
+  -webkit-font-smoothing: antialiased;
 }
 
 main {
@@ -310,66 +311,28 @@ ul {
   }
 }
 
-.mega-menu {
-  display: none;
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 50vh; 
+}
+
+.parallax-image {
+  position: fixed;
+  top: 0;
   left: 0;
-  position: absolute;
-  text-align: left;
   width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* Adicione aqui a imagem de fundo desejada */
+  background-image: url("/background-template.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-
-
-/* #hoverable Class Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.hoverable {
-  position: static;
+.parallax-content {
+  /* Estilize o conteúdo conforme necessário */
+  padding: 20px;
 }
 
-.hoverable > a:after {
-  content: "\25BC";
-  font-size: 10px;
-  padding-left: 6px;
-  position: relative;
-  top: -1px;
-}
-
-.hoverable:hover .mega-menu {
-  display: block;
-}
-
-
-/* #toggle Class Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.toggleable > label:after {
-  content: "\25BC";
-  font-size: 10px;
-  padding-left: 6px;
-  position: relative;
-  top: -1px;
-}
-
-.toggle-input {
-  display: none;
-}
-.toggle-input:not(checked) ~ .mega-menu {
-  display: none;
-}
-
-.toggle-input:checked ~ .mega-menu {
-  display: block;
-}
-
-.toggle-input:checked + label {
-  color: white;
-  background: #2c5282; /*@apply bg-blue-800 */
-}
-
-.toggle-input:checked ~ label:after {
-  content: "\25B2";
-  font-size: 10px;
-  padding-left: 6px;
-  position: relative;
-  top: -1px;
-}

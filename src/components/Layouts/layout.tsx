@@ -25,9 +25,9 @@ const Layout: React.FC<{
 
       <div className="flex flex-col justify-between mt-20">
         <Header />
-        <main className="flex flex-col items-center md:bg-primary-background">
-          {children}
-        </main>
+
+        {children}
+
         <footer className="z-10">
           <Footer />
         </footer>

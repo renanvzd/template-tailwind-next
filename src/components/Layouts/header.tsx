@@ -1,9 +1,9 @@
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
-
 import { useRouter } from 'next/router';
 // import Logo from "@/assets/images/fourleaf.svg";
 import { MenuHeader } from './header-menus';
+import { COMPANY } from '@/constants/general';
 
 
 export function Header() {
@@ -15,13 +15,13 @@ export function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 z-40 w-full bg-primary-background border-b border-gray-800">
+      <header className="fixed top-0 left-0 z-40 w-full">
         <div className="flex items-center justify-between h-20 mx-auto max-w-full md:px-3 lg:px-16 xl:px-8">
           <div className="flex items-center w-auto justify-center mr-5">
             {/* <Image className="w-10 h-10 mr-2" src={Logo} alt="Four Leaf" width={20} height={20} /> */}
             <div className="flex items-center justify-center flex-grow">
               <Link href="/">
-                <span className="text-3xl sm:text-4xl lg:text-4xl font-bold ml-5 md:ml-8 text-white items-baseline justify-center ">Template</span>
+                <span className="text-3xl sm:text-4xl lg:text-4xl font-bold ml-5 md:ml-8 text-white items-baseline justify-center ">{COMPANY}</span>
               </Link>
             </div>
           </div>
