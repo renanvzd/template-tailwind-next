@@ -21,24 +21,28 @@ const LandingPage = () => {
         <div className="w-full">
           <FirstSectionText />
         </div>
+
         <div className="w-full flex mx-auto justify-center items-center">
           <Parallax title={"First Section"} className="parallax-beer-background lg:h-[30vh] h-[20vh]" />
         </div>
         <div className="w-full">
           <SecondSectionText />
         </div>
+
         <div className="w-full flex mx-auto justify-center items-center">
           <Parallax title={"Gallery"} className="parallax-beer-background lg:h-[30vh] h-[20vh]" />
         </div>
         <div className="w-full">
           <ThirdSection />
         </div>
+
         <div className="w-full flex mx-auto justify-center items-center">
           <Parallax title={"Testimonials"} className="parallax-beer-background lg:h-[30vh] h-[20vh]" />
         </div>
         <div className="w-full">
           <FourthSection />
         </div>
+
         <div className="w-full flex mx-auto justify-center items-center">
           <Parallax title={"Get In Touch"} className="parallax-beer-background lg:h-[30vh] h-[20vh]" />
         </div>
