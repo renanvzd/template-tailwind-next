@@ -1,3 +1,5 @@
+const { fontFamily } = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -5,11 +7,12 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily: {
-      'poppins': ['Poppins', 'sans-serif'],
-      'bruno': ['Bruno Ace SC', 'cursive'],
-    },
     extend: {
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+        'bruno': ['Bruno Ace SC', 'cursive'],
+        'secular': ['Secular One', 'sans-serif'],
+      },
       screens: {
         'sm': '640px',
         'md': '768px',

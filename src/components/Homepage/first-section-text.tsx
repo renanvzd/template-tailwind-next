@@ -5,8 +5,8 @@ const FirstSectionText: React.FC = () => (
   <>
     <div className="w-full h-[60vh] flex justify-center mx-auto items-center">
       <div className="flex justify-center mx-auto items-center">
-        <div className="flex justify-center mx-auto items-center">
-          <p className="text-6xl text-white text-center justify-center flex mx-auto">Welcome to {COMPANY}</p>
+        <div className="flex justify-center mx-auto items-center px-16">
+          <p className="lg:text-8xl md:text-7xl text-5xl text-white text-center justify-center flex mx-auto font-secular">Welcome to {COMPANY}</p>
         </div>
       </div>
     </div>

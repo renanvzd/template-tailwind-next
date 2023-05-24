@@ -11,8 +11,7 @@ h5,
 span,
 li,
 button {
-  font-family: "Gotham", "Avenir", Sans-Serif !important;
-  color: #2c2c2c;
+  -webkit-font-smoothing: antialiased;
 }
 
 p + p {
@@ -38,7 +37,7 @@ input,
 textarea,
 select,
 button {
-  font: 400 1rem "Roboto", sans-serif;
+  font-size: 1rem;
   outline: none;
   -webkit-font-smoothing: antialiased;
 }
