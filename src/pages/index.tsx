@@ -10,7 +10,8 @@ const LandingPage = () => {
         description=""
         content=""
       >
-        <FirstSectionParallaxHomePage />
+        <FirstSectionParallaxHomePage className="parallax-home-first-section"
+        />
         <HeaderHomepage />
       </Layout>
     </>

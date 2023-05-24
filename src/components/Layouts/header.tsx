@@ -16,7 +16,7 @@ export function Header() {
   return (
     <>
       <header className="fixed top-0 left-0 z-40 w-full">
-        <div className="flex items-center justify-between h-20 mx-auto max-w-full md:px-3 lg:px-16 xl:px-8">
+        <div className="flex items-center justify-between lg:h-32 h-20 mx-auto max-w-full md:px-3 lg:px-16 xl:px-8">
           <div className="flex items-center w-auto justify-center mr-5">
             {/* <Image className="w-10 h-10 mr-2" src={Logo} alt="Four Leaf" width={20} height={20} /> */}
             <div className="flex items-center justify-center flex-grow">

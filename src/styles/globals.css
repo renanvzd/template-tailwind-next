@@ -105,7 +105,7 @@ ul {
   border-radius: 3px 3px 0 0;
   width: 80px;
   position: absolute;
-  bottom: 0px;
+  bottom: 35px;
   background: #fff;
 }
 
@@ -311,13 +311,24 @@ ul {
   }
 }
 
+/************************* PARALLAX ***************************/
+
 .parallax-container {
   position: relative;
   overflow: hidden;
   height: 50vh; 
 }
 
-.parallax-image {
+.parallax-home-first-section {
+  background-image: url("/background-template.jpg");
+  filter: brightness(70%);
+  opacity: 0.9;
+  /* filter: contrast(120%); */
+  /* filter: invert(30%); */
+  /* filter: saturate(261%); */
+}
+
+.parallax-box-image {
   position: fixed;
   top: 0;
   left: 0;
@@ -325,7 +336,6 @@ ul {
   height: 100%;
   z-index: -1;
   /* Adicione aqui a imagem de fundo desejada */
-  background-image: url("/background-template.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -336,3 +346,4 @@ ul {
   padding: 20px;
 }
 
+/************************* PARALLAX ***************************/

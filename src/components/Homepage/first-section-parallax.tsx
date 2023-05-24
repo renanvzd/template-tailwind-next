@@ -2,12 +2,16 @@ import { COMPANY } from "@/constants/general";
 import React from "react";
 import { FirstSectionText } from "./first-section-text";
 
-const FirstSectionParallaxHomePage: React.FC = () => (
+interface FirstSectionParallaxHomePageProps {
+  className?: string;
+}
+
+const FirstSectionParallaxHomePage: React.FC<FirstSectionParallaxHomePageProps> = ({ className }) => (
   <>
     <div className="h-screen w-full">
       <FirstSectionText />
       <div className="parallax-container">
-        <div className="parallax-image ">
+        <div className={`parallax-box-image ${className}`}>
         </div>
         <div className="parallax-content">
         </div>
