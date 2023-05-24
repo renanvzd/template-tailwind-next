@@ -336,13 +336,20 @@ ul {
   /* filter: invert(30%); */
   /* filter: saturate(261%); */
 }
+.parallax-beer-background {
+  background-image: url("/beer-background.jpg");
+  filter: brightness(70%);
+  opacity: 0.9;
+  /* filter: contrast(120%); */
+  /* filter: invert(30%); */
+  /* filter: saturate(261%); */
+}
 
 .parallax-box-image {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   z-index: -1;
   /* Adicione aqui a imagem de fundo desejada */
   background-repeat: no-repeat;
