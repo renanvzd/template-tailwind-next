@@ -359,5 +359,22 @@ ul {
   /* filter: saturate(261%); */
 }
 
+.parallax-menu {
+  background-image: url("../assets/images/background-template.jpg");
+  filter: brightness(70%);
+  opacity: 0.9;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  z-index: -1;
+  /* filter: contrast(120%); */
+  /* filter: invert(30%); */
+  /* filter: saturate(261%); */
+}
+
+
 
 /************************* PARALLAX ***************************/

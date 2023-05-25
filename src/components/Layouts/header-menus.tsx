@@ -15,6 +15,11 @@ export const MenuHeader: MenuLinksItems[] = [
     icon: <RxDashboard />,
   },
   {
+    menuTitle: 'Menu',
+    href: '/page-two',
+    icon: <AiOutlineMail />,
+  },
+  {
     menuTitle: 'Contact',
     href: '/contact',
     icon: <AiOutlineMail />,
