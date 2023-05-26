@@ -5,35 +5,35 @@ const OurTeam = () => {
 
   const team = [
     {
-      avatar: { Food },
+      avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
       name: "John Doe",
       title: "Staff Member",
       linkedin: "javascript:void(0)",
       twitter: "javascript:void(0)",
     },
     {
-      avatar: { Food },
+      avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
       name: "John Doe",
       title: "Staff Member",
       linkedin: "javascript:void(0)",
       twitter: "javascript:void(0)",
     },
     {
-      avatar: { Food },
+      avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
       name: "John Doe",
       title: "Staff Member",
       linkedin: "javascript:void(0)",
       twitter: "javascript:void(0)",
     },
     {
-      avatar: { Food },
+      avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
       name: "John Doe",
       title: "Staff Member",
       linkedin: "javascript:void(0)",
       twitter: "javascript:void(0)",
     },
     {
-      avatar: { Food },
+      avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
       name: "John Doe",
       title: "Staff Member",
       linkedin: "javascript:void(0)",
@@ -58,12 +58,10 @@ const OurTeam = () => {
               team.map((item, idx) => (
                 <li key={idx} className="flex gap-4 items-center">
                   <div className="flex-none w-24 h-24">
-                    <Image
-                      src={Food}
+                    <img
+                      src={item.avatar}
                       className="w-full h-full rounded-full"
                       alt=""
-                      width={100}
-                      height={100}
                     />
                   </div>
                   <div>

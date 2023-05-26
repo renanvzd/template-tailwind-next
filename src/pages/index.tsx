@@ -7,6 +7,7 @@ import { ThirdSection } from "@/components/Homepage/third-section";
 import { FourthSection } from "@/components/Homepage/fourth-section";
 import { FifthSection } from "@/components/Homepage/fifth-section";
 import { OurTeam } from "@/components/Homepage/our-team";
+import { Testimonials } from "@/components/testimonials";
 
 const LandingPage = () => {
   return (
@@ -41,7 +42,7 @@ const LandingPage = () => {
           <Parallax title={"Testimonials"} className="parallax-beer-background lg:h-[30vh] h-[20vh]" />
         </div>
         <div className="w-full">
-          <FourthSection />
+          <Testimonials />
         </div>
         <div className="w-full flex mx-auto justify-center items-center">
           <Parallax title={"Our Team"} className="parallax-beer-background lg:h-[30vh] h-[20vh]" />
