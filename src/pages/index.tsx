@@ -6,6 +6,7 @@ import { SecondSectionText } from "@/components/Homepage/second-section-text";
 import { ThirdSection } from "@/components/Homepage/third-section";
 import { FourthSection } from "@/components/Homepage/fourth-section";
 import { FifthSection } from "@/components/Homepage/fifth-section";
+import { OurTeam } from "@/components/Homepage/our-team";
 
 const LandingPage = () => {
   return (
@@ -30,7 +31,7 @@ const LandingPage = () => {
         </div>
 
         <div className="w-full flex mx-auto justify-center items-center">
-          <Parallax title={"Gallery"} className="parallax-beer-background lg:h-[30vh] h-[20vh]" />
+          <Parallax title={"Menu"} className="parallax-beer-background lg:h-[30vh] h-[20vh]" />
         </div>
         <div className="w-full">
           <ThirdSection />
@@ -41,6 +42,12 @@ const LandingPage = () => {
         </div>
         <div className="w-full">
           <FourthSection />
+        </div>
+        <div className="w-full flex mx-auto justify-center items-center">
+          <Parallax title={"Our Team"} className="parallax-beer-background lg:h-[30vh] h-[20vh]" />
+        </div>
+        <div className="w-full">
+          <OurTeam />
         </div>
 
         <div className="w-full flex mx-auto justify-center items-center">

@@ -98,7 +98,7 @@ const Footer: React.FC = () => {
               </form>
             </div> */}
           </div>
-          <div className="mx-auto flex justify-center mt-16 space-y-0  md:space-y-0 ">
+          <div className="mx-auto flex justify-center mt-10 space-y-0  md:space-y-0 ">
             <div className="md:gap-24 gap-10 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 justify-center text-center">
               {
                 footerNavs.map((item, idx) => (
