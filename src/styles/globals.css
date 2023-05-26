@@ -137,7 +137,7 @@ ul {
     width: 80px;
     position: relative;
     bottom: -15px;
-    background: var(--green-500);
+    background: white;
   }
 }
 

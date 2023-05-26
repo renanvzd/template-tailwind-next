@@ -49,44 +49,23 @@ const Footer: React.FC = () => {
         },
       ]
     },
-    {
-      label: "Explore",
-      items: [
-        {
-          href: 'javascript:void()',
-          name: 'Showcase'
-        },
-        {
-          href: 'javascript:void()',
-          name: 'Roadmap'
-        },
-        {
-          href: 'javascript:void()',
-          name: 'Languages'
-        },
-        {
-          href: 'javascript:void()',
-          name: 'Blog'
-        },
-      ]
-    },
-    {
-      label: "Company",
-      items: [
-        {
-          href: 'javascript:void()',
-          name: 'Partners'
-        },
-        {
-          href: 'javascript:void()',
-          name: 'Team'
-        },
-        {
-          href: 'javascript:void()',
-          name: 'Careers'
-        },
-      ],
-    }
+    // {
+    //   label: "Company",
+    //   items: [
+    //     {
+    //       href: 'javascript:void()',
+    //       name: 'Partners'
+    //     },
+    //     {
+    //       href: 'javascript:void()',
+    //       name: 'Team'
+    //     },
+    //     {
+    //       href: 'javascript:void()',
+    //       name: 'Careers'
+    //     },
+    //   ],
+    // }
   ]
 
   return (
@@ -94,13 +73,13 @@ const Footer: React.FC = () => {
       <footer className="pt-10 bg-black">
         {/* <Whatsapp phone={WHATSAPP_NUMBER} /> */}
         <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-          <div className="justify-between items-center gap-12 md:flex">
-            <div className="flex-1 max-w-lg">
+          <div className="flex mx-auto justify-center items-center md:flex w-full">
+            <div className="max-w-lg">
               <h3 className="text-2xl font-bold text-white">
                 {COMPANY}
               </h3>
             </div>
-            <div className="flex-1 mt-6 md:mt-0">
+            {/* <div className="flex-1 mt-6 md:mt-0">
               <form onSubmit={(e) => e.preventDefault()} className="flex items-center gap-x-3 md:justify-end">
                 <div className="relative">
                   <svg className="w-6 h-6 text-white absolute left-3 inset-y-0 my-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -117,48 +96,53 @@ const Footer: React.FC = () => {
                   Subscribe
                 </button>
               </form>
+            </div> */}
+          </div>
+          <div className="mx-auto flex justify-center mt-16 space-y-0  md:space-y-0 ">
+            <div className="md:gap-24 gap-10 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 justify-center text-center">
+              {
+                footerNavs.map((item, idx) => (
+                  <ul
+                    className="space-y-4 text-white"
+                    key={idx}
+                  >
+                    <h4 className="text-white font-semibold sm:pb-0">
+                      {item.label}
+                    </h4>
+                    {
+                      item.items.map(((el, idx) => (
+                        <li key={idx}>
+                          <a
+                            href={el.href}
+                            className="hover:text-white duration-150"
+
+                          >
+                            {el.name}
+                          </a>
+                        </li>
+                      )))
+                    }
+                  </ul>
+                ))
+              }
             </div>
           </div>
-          <div className="flex-1 mt-16 space-y-6 justify-between sm:flex md:space-y-0">
-            {
-              footerNavs.map((item, idx) => (
-                <ul
-                  className="space-y-4 text-white"
-                  key={idx}
-                >
-                  <h4 className="text-white font-semibold sm:pb-2">
-                    {item.label}
-                  </h4>
-                  {
-                    item.items.map(((el, idx) => (
-                      <li key={idx}>
-                        <a
-                          href={el.href}
-                          className="hover:text-white duration-150"
-
-                        >
-                          {el.name}
-                        </a>
-                      </li>
-                    )))
-                  }
-                </ul>
-              ))
-            }
-          </div>
-          <div className="mt-10 py-10 border-t items-center justify-between sm:flex">
-            <p className="text-white">© 2022 Float UI Inc. All rights reserved.</p>
-            <div className="flex items-center gap-x-6 text-white mt-6">
-              <a href={FACEBOOK}>
-                <Image src={FacebookImage} alt="Facebook" className="md:h-8 md:w-8 h-10 w-10" />
-              </a>
-              <a href={YOUTUBE}>
-                <Image src={YoutubeImage} alt="Youtube" className="md:h-9 md:w-10 h-10 w-10" />
-              </a>
-              <a href={INSTAGRAM}>
-                <Image src={InstagramImage} alt="Instagram" className="md:h-8 md:w-8 h-10 w-10" />
-              </a>
-
+          <div className="flex mt-10 py-10 border-t items-center">
+            <div className=" w-full flex md:flex-row flex-col mx-auto md:justify-between justify-center">
+              <div className="flex items-center justify-center mt-6 ">
+                <p className="flex text-white items-center">© 2023 - All rights reserved.</p>
+              </div>
+              <div className="flex items-center justify-center gap-x-6 text-white mt-6 ">
+                <a href={FACEBOOK}>
+                  <Image src={FacebookImage} alt="Facebook" className="md:h-8 md:w-8 h-10 w-10" />
+                </a>
+                <a href={YOUTUBE}>
+                  <Image src={YoutubeImage} alt="Youtube" className="md:h-9 md:w-10 h-10 w-10" />
+                </a>
+                <a href={INSTAGRAM}>
+                  <Image src={InstagramImage} alt="Instagram" className="md:h-8 md:w-8 h-10 w-10" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
