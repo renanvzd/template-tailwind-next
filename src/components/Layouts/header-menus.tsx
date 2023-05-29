@@ -20,8 +20,8 @@ export const MenuHeader: MenuLinksItems[] = [
     icon: <AiOutlineMail />,
   },
   {
-    menuTitle: 'Contact',
-    href: '/contact',
+    menuTitle: 'Gallery',
+    href: '/gallery',
     icon: <AiOutlineMail />,
   },
 ]

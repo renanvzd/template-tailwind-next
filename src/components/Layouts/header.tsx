@@ -18,7 +18,7 @@ export function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      setIsScrolled(scrollTop > 350);
+      setIsScrolled(scrollTop > 150);
     };
 
     window.addEventListener('scroll', handleScroll);
