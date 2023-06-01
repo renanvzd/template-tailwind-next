@@ -29,7 +29,7 @@ const Menu = () => {
         <div className="w-full">
           <FirstSectionMenu />
         </div>
-        <div className="w-full flex gap-10 mx-auto justify-center md:mb-12">
+        <div className="w-full flex gap-10 mx-auto justify-center lg:mb-2 mb-12">
           <button className={`${showFoodMenu ? "bg-green-200" : "bg-gray-100"} py-3 px-10 rounded-md`} onClick={handleFoodClick}>
             <p className="text-xl font-bold">Food</p>
           </button>
