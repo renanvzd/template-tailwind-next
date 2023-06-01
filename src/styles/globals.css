@@ -378,3 +378,14 @@ ul {
 
 
 /************************* PARALLAX ***************************/
+
+.tab-drink::before,
+.tab-drink::after,
+ {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+}
