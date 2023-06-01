@@ -42,7 +42,7 @@ const MenuList: React.FC = () => (
     </div> */}
 
     <div className="w-full h-full mt-0 mb-20 flex flex-col justify-center mx-auto items-center">
-      <p className="md:text-6xl text-5xl md:pb-10 pb-12">Food</p>
+      <p className="md:text-6xl text-5xl md:pb-10 pb-12 lg:pt-0 pt-16">Food</p>
       <div className="lg:w-[70%] md:w-full mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 pt-5  gap-x-8 lg:px-5 md:px-8 px-4">
         <div className="w-full flex mx-auto justify-between rounded-md ">
           <div className="flex flex-col w-full md:pt-8 px-4">

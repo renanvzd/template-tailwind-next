@@ -83,7 +83,7 @@ const whiskey = [
 const MenuDrinkList: React.FC = () => (
   <>
     <div className="w-full h-full mt-0 mb-20 flex flex-col justify-center mx-auto items-center">
-      <p className="md:text-6xl text-5xl md:pb-10 pb-12">Drinks</p>
+      <p className="md:text-6xl text-5xl md:pb-10 pb-8 lg:pt-0 pt-16">Drinks</p>
       <div className="lg:w-[80%] md:w-full w-full mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 pt-5  gap-x-8 lg:px-5 md:px-8 px-4">
 
         <div className="w-full flex flex-col py-5 mx-auto items-center rounded-md">
